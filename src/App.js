@@ -12,9 +12,11 @@ import {
   Switch,
   Route,
   Redirect,
+  BrowserRouter,
 } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
-import history from './history'
+import history from "./history";
+import createBrowserHistory from 'history/createBrowserHistory';
 
 class App extends Component {
   render() {
@@ -36,7 +38,9 @@ class App extends Component {
     }${RtlVersion ? " rtl" : ""}${offcanvas ? " offcanvas-active" : ""}${
       horizontalMenu ? " h-menu" : ""
     }${miniSidebar ? " mini_sidebar" : ""}${miniHover ? " mini_hover" : ""}`;
-	
+
+    // const history = createBrowserHistory({ basename: '/your/app' });
+
     return (
       <>
         <ToastContainer />
@@ -45,7 +49,7 @@ class App extends Component {
             this.leftSidebar = leftSidebar;
           }}
         >
-          <Router history={history}>
+          <Router  basename="/coverage-admin-latest" history={history}>
             <Switch>
               {/* <Route path="/signup" component={SignUp} /> */}
               <Route path="/login" component={Login} />

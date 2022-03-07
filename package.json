@@ -1,6 +1,7 @@
 {
   "name": "oculux",
   "version": "0.1.0",
+  "homepage": "http:/20.203.45.189/coverage-admin-latest/",
   "private": true,
   "dependencies": {
     "@hookform/error-message": "^2.0.0",
