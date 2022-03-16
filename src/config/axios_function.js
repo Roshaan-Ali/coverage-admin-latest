@@ -2,7 +2,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 /** ---------- BaseUrl ------------ */
-const baseUrl = "https://50f3-103-244-176-173.ngrok.io";
+const baseUrl = "http://20.203.45.189:3000";
 
 /**
  * @description Sends a Get request to api
